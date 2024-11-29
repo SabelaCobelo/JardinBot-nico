@@ -1,0 +1,239 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8f0; /* Verde claro de fondo */
+    color: #333333; /* Texto oscuro */
+    line-height: 1.6;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Encabezado */
+header {
+    background-color: #388e3c; /* Verde oscuro */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 5px;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #4caf50; /* Verde fresco */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffeb3b; /* Amarillo suave al pasar el ratón */
+    border-bottom: 2px solid #ffeb3b;
+}
+
+/* Secciones */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #388e3c; /* Títulos en verde oscuro */
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    text-align: justify;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Imágenes dentro de secciones */
+img.imagen {
+    display: block;
+    margin: 40px auto;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+img.imagen:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para la tabla de plantas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #388e3c;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+td img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para la sección de historia */
+#historia {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+#historia p {
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #388e3c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 80px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffeb3b;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    img.imagen {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+}
